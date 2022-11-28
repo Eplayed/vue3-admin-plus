@@ -6,6 +6,8 @@ import table from './modules/table'
 import excel from './modules/excel'
 import other from './modules/other'
 import guid from './modules/guid'
+import RBAC from './modules/RBAC'
+import mybatis from './modules/mybatis'
 import type { RouterTypes } from '~/basic'
 import Layout from '@/layout/index.vue'
 
@@ -51,16 +53,16 @@ export const constantRoutes: RouterTypes = [
       }
     ]
   },
-  {
-    path: '/RBAC',
-    component: Layout,
-    children: [
-      {
-        path: 'https://github.jzfai.top/low-code-platform/#/permission-center/user-table-query',
-        meta: { title: 'RBAC', icon: 'skill' }
-      }
-    ]
-  },
+  // {
+  //   path: '/RBAC',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'https://github.jzfai.top/low-code-platform/#/permission-center/user-table-query',
+  //       meta: { title: 'RBAC', icon: 'skill' }
+  //     }
+  //   ]
+  // },
   {
     path: '/setting-switch',
     component: Layout,
@@ -152,6 +154,8 @@ export const constantRoutes: RouterTypes = [
       }
     ]
   },
+  mybatis,
+  RBAC,
   basicDemo,
   guid,
   richText,
