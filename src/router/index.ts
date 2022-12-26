@@ -4,9 +4,10 @@ import charts from './modules/charts'
 import richText from './modules/rich-text'
 import table from './modules/table'
 import excel from './modules/excel'
-import directive from './modules/directive'
 import other from './modules/other'
 import guid from './modules/guid'
+import RBAC from './modules/RBAC'
+import mybatis from './modules/mybatis'
 import type { RouterTypes } from '~/basic'
 import Layout from '@/layout/index.vue'
 
@@ -52,25 +53,16 @@ export const constantRoutes: RouterTypes = [
       }
     ]
   },
-  guid,
-
-  {
-    path: '/RBAC',
-    component: Layout,
-    children: [
-      {
-        path: 'https://github.jzfai.top/low-code-platform/#/permission-center/user-table-query',
-        meta: { title: 'RBAC', icon: 'skill' }
-      }
-    ]
-  },
-  basicDemo,
-  richText,
-  charts,
-  table,
-  directive,
-  excel,
-  other,
+  // {
+  //   path: '/RBAC',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'https://github.jzfai.top/low-code-platform/#/permission-center/user-table-query',
+  //       meta: { title: 'RBAC', icon: 'skill' }
+  //     }
+  //   ]
+  // },
   {
     path: '/setting-switch',
     component: Layout,
@@ -83,6 +75,7 @@ export const constantRoutes: RouterTypes = [
       }
     ]
   },
+
   {
     path: '/error-log',
     component: Layout,
@@ -160,7 +153,16 @@ export const constantRoutes: RouterTypes = [
         meta: { title: 'menu2' }
       }
     ]
-  }
+  },
+  mybatis,
+  RBAC,
+  basicDemo,
+  guid,
+  richText,
+  charts,
+  table,
+  excel,
+  other
 ]
 
 //角色和code数组动态路由

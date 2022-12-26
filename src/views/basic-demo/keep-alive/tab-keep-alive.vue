@@ -4,7 +4,8 @@
     <el-input v-model="searchForm.pageUrl" style="width: 200px" placeholder="input to test TabKeepAlive" />
   </div>
 </template>
-<script setup lang="ts" name="TabKeepAlive">
+<script setup lang="ts">
+defineOptions({ name: 'TabKeepAlive' })
 const searchForm = reactive({
   pageUrl: ''
 })

@@ -45,7 +45,8 @@ yarn*
 pnpm*
 
 
-#.eslintrc-auto-import.json
-#auto-imports.d.ts
-#components.d.ts
+.eslintrc-auto-import.json
+auto-imports.d.ts
+components.d.ts
 stats.html
+ts-out-dir

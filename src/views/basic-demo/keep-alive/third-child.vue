@@ -13,7 +13,8 @@
   </div>
 </template>
 
-<script setup name="ThirdChild">
+<script setup>
+defineOptions({ name: 'ThirdChild' })
 const searchForm = reactive({
   name: '',
   age: ''

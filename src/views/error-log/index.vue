@@ -80,6 +80,7 @@
 //import { Delete, FolderAdd } from '@element-plus/icons-vue'
 import { useTable } from '@/hooks/use-table'
 import { copyValueToClipboard } from '@/hooks/use-common'
+defineOptions({ name: 'error-collection' })
 const searchForm = reactive({
   log: '',
   pageUrl: '',

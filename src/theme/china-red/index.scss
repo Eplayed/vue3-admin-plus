@@ -1,5 +1,4 @@
 /*china-red*/
-//element-plus
 @use "./element-plus/css-vars";
 @use "./element-plus/var";
 @use "./element-plus/button";
@@ -10,4 +9,5 @@
 @use "./element-plus/table";
 
 //custom
-@use "./custom/ct-css-vars";
+@use "./custom/lc-css-vars";
+@use "./custom/lc-var";
