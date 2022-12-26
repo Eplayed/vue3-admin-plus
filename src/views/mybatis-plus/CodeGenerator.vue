@@ -180,7 +180,7 @@ import {
   changeTheFirstWordToCase,
   removeTbOrT,
   tbTypeMapping
-} from '@/views/code-generator/generatorUtis'
+} from '@/views/mybatis-plus/generatorUtis'
 // import CustomUploadVms from './CustomUploadVms.vue'
 
 import commonUtil from '@/utils/common-util'

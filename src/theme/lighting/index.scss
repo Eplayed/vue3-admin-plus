@@ -20,12 +20,12 @@ $--colors: (
   )
 );
 
-@forward "./var.scss" with (
-  $colors: $--colors
-);
+// @forward "./var.scss" with (
+//   $colors: $--colors
+// );
 
 /*import theme 起作用*/
-@use "./css-vars.scss" as *;
+// @use "./css-vars.scss" as *;
 html.lighting-theme {
   /*element-plus section */
   //--el-menu-active-color: #409eff;

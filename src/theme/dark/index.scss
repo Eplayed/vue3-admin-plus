@@ -20,12 +20,12 @@ $--colors: (
   )
 );
 
-@forward "./var.scss" with (
-  $colors: $--colors
-);
+// @forward "./var.scss" with (
+//   $colors: $--colors
+// );
 
-/*import dark theme 起作用*/
-@use "./css-vars.scss" as *;
+// /*import dark theme 起作用*/
+// @use "./css-vars.scss" as *;
 
 html.dark {
   //--el-menu-active-color: #409eff;

@@ -147,6 +147,7 @@ export function filterAsyncRouter({ menuList, roles, codes }) {
   }
   accessRoutes.forEach((route) => router.addRoute(route))
   asyncRoutes.forEach((item) => router.addRoute(item))
+  console.log('accessRoutes', accessRoutes)
   basicStore.setFilterAsyncRoutes(accessRoutes)
 }
 //重置路由

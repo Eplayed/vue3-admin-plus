@@ -214,7 +214,7 @@ export const asyncRoutes: RouterTypes = [
   // 404 page must be placed at the end !!!
   { path: '/:catchAll(.*)', name: 'CatchAll', redirect: '/404', hidden: true }
 ]
-
+console.log('constantRoutes', constantRoutes)
 const router = createRouter({
   history: createWebHashHistory(),
   scrollBehavior: () => ({ top: 0 }),
