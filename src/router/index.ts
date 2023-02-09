@@ -55,17 +55,8 @@ export const constantRoutes: RouterTypes = [
     ]
   },
   guid,
-
-  // {
-  //   path: '/RBAC',
-  //   component: Layout,
-  //   children: [
-  //     {
-  //       path: 'https://github.jzfai.top/low-code-platform/#/permission-center/user-table-query',
-  //       meta: { title: 'RBAC', icon: 'skill' }
-  //     }
-  //   ]
-  // },
+  mybatis,
+  RBAC,
   basicDemo,
   richText,
   charts,
@@ -163,16 +154,7 @@ export const constantRoutes: RouterTypes = [
         meta: { title: 'menu2' }
       }
     ]
-  },
-  mybatis,
-  RBAC,
-  basicDemo,
-  guid,
-  richText,
-  charts,
-  table,
-  excel,
-  other
+  }
 ]
 
 //角色和code数组动态路由
