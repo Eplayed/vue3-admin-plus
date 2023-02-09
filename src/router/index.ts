@@ -4,6 +4,7 @@ import charts from './modules/charts'
 import richText from './modules/rich-text'
 import table from './modules/table'
 import excel from './modules/excel'
+import directive from './modules/directive'
 import other from './modules/other'
 import guid from './modules/guid'
 import RBAC from './modules/RBAC'
@@ -53,6 +54,8 @@ export const constantRoutes: RouterTypes = [
       }
     ]
   },
+  guid,
+
   // {
   //   path: '/RBAC',
   //   component: Layout,
@@ -63,6 +66,13 @@ export const constantRoutes: RouterTypes = [
   //     }
   //   ]
   // },
+  basicDemo,
+  richText,
+  charts,
+  table,
+  directive,
+  excel,
+  other,
   {
     path: '/setting-switch',
     component: Layout,

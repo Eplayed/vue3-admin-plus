@@ -5,14 +5,17 @@
     "bus": true,
     "buttonCodes": true,
     "casHandleChange": true,
+    "clickoutside": true,
     "cloneDeep": true,
     "closeElLoading": true,
     "codesPermission": true,
     "commonUtil": true,
     "computed": true,
+    "copy": true,
     "copyValueToClipboard": true,
     "createApp": true,
     "customRef": true,
+    "debounce": true,
     "defineAsyncComponent": true,
     "defineComponent": true,
     "directives": true,
@@ -43,6 +46,7 @@
     "langTitle": true,
     "loginOutReq": true,
     "loginReq": true,
+    "longpress": true,
     "markRaw": true,
     "nextTick": true,
     "onActivated": true,
@@ -108,6 +112,8 @@
     "watch": true,
     "watchEffect": true,
     "watchPostEffect": true,
-    "watchSyncEffect": true
+    "watchSyncEffect": true,
+    "watermark": true,
+    "waves": true
   }
 }
