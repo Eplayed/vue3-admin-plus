@@ -2,13 +2,14 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import basicDemo from './modules/basic-demo'
 import charts from './modules/charts'
 import richText from './modules/rich-text'
-import table from './modules/table'
+// import table from './modules/table'
 import excel from './modules/excel'
 import directive from './modules/directive'
 import other from './modules/other'
 import guid from './modules/guid'
 import RBAC from './modules/RBAC'
 import mybatis from './modules/mybatis'
+import userList from './modules/userRouter'
 import type { RouterTypes } from '~/basic'
 import Layout from '@/layout/index.vue'
 
@@ -60,7 +61,7 @@ export const constantRoutes: RouterTypes = [
   basicDemo,
   richText,
   charts,
-  table,
+  // table,
   directive,
   excel,
   other,
@@ -154,7 +155,8 @@ export const constantRoutes: RouterTypes = [
         meta: { title: 'menu2' }
       }
     ]
-  }
+  },
+  ...userList
 ]
 
 //角色和code数组动态路由

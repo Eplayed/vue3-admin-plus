@@ -60,7 +60,7 @@
 </template>
 
 <script setup lang="ts">
-import useForm from '@/hooks/global/useForm'
+import { useForm } from '@/hooks/global/useForm'
 const { getQueryParam, routerBack } = useVueRouter()
 /*回显数据*/
 const { isEdit, row } = getQueryParam()
