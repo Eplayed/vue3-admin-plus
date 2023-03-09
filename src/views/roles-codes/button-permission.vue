@@ -5,3 +5,4 @@
     <el-button v-RolesPermission="['admin', 'editor']">editor and admin</el-button>
   </div>
 </template>
+<script setup lang="ts"></script>

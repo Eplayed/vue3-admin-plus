@@ -1,6 +1,6 @@
 import { ref } from 'vue'
-import { AxiosReqTy } from '~/common'
 import momentMini from 'moment-mini'
+import { AxiosReqTy } from '~/common'
 
 const useTableExample = (searchForm, selectPageReq) => {
   /*define ref*/
@@ -16,9 +16,9 @@ const useTableExample = (searchForm, selectPageReq) => {
       pageSize: pageSize.value
     })
     Object.keys(data).forEach((fItem) => {
-      if (['', null, undefined, NaN].includes(data[fItem])) delete data[fItem]
+      if (['', null, undefined, Number.NaN].includes(data[fItem])) delete data[fItem]
       if (method === 'get') {
-        if (data[fItem] instanceof Array) delete data[fItem]
+        if (Array.isArray(data[fItem])) delete data[fItem]
         if (data[fItem] instanceof Object) delete data[fItem]
       }
     })

@@ -113,10 +113,10 @@
   </div>
 </template>
 <script setup lang="ts">
-defineOptions({ name: 'permission' })
-import { useTable } from '@/hooks/global/useTable'
 import { Delete, FolderAdd } from '@element-plus/icons-vue'
+import { useTable } from '@/hooks/global/useTable'
 import settings from '@/settings'
+defineOptions({ name: 'permission' })
 
 let searchForm = reactive({
   name: '',
@@ -125,7 +125,7 @@ let searchForm = reactive({
   category: ''
 })
 
-searchForm.plateFormId = parseFloat(localStorage.getItem('plateFormId') as string) || settings.plateFormId
+searchForm.plateFormId = Number.parseFloat(localStorage.getItem('plateFormId') as string) || settings.plateFormId
 
 const setPlateForm = ({ id }) => {
   localStorage.setItem('plateFormId', id)

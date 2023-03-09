@@ -101,18 +101,21 @@ const router = useRouter()
 const basicStore = useBasicStore()
 
 const loginFunc = () => {
-  loginReq(subForm)
-    .then(({ data }) => {
-      elMessage('登录成功')
-      basicStore.setToken(data?.jwtToken)
-      router.push('/')
-    })
-    .catch((err) => {
-      tipMessage = err?.msg
-    })
-    .finally(() => {
-      subLoading = false
-    })
+  subLoading = false
+  elMessage('登录成功')
+  router.push('/')
+  // loginReq(subForm)
+  //   .then(({ data }) => {
+  //     elMessage('登录成功')
+  //     basicStore.setToken(data?.jwtToken)
+  //     router.push('/')
+  //   })
+  //   .catch((err) => {
+  //     tipMessage = err?.msg
+  //   })
+  //   .finally(() => {
+  //     subLoading = false
+  //   })
 }
 /*
  *  password show or hidden

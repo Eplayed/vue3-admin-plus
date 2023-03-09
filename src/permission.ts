@@ -3,7 +3,7 @@ import { filterAsyncRouter, progressClose, progressStart } from '@/hooks/use-per
 import { useBasicStore } from '@/store/basic'
 import { userInfoReq } from '@/api/user'
 import { langTitle } from '@/hooks/use-common'
-import settings from "@/settings";
+import settings from '@/settings'
 
 //路由进入前拦截
 //to:将要进入的页面 vue-router4.0 不推荐使用next()
@@ -17,6 +17,7 @@ router.beforeEach(async (to) => {
     basicStore.setFilterAsyncRoutes([])
     return true
   }
+  console.log('getUserInfo', basicStore.getUserInfo)
   //1.判断token
   if (basicStore.token) {
     if (to.path === '/login') {
@@ -25,7 +26,13 @@ router.beforeEach(async (to) => {
       //2.判断是否获取用户信息
       if (!basicStore.getUserInfo) {
         try {
-          const userData = await userInfoReq()
+          // const userData = await userInfoReq()
+          const userData = {
+            menuList: [],
+            roles: ['admin'],
+            codes: [],
+            userInfo: { username: '123' }
+          }
           //3.动态路由权限筛选
           filterAsyncRouter(userData)
           //4.保存用户信息到store
